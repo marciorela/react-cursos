@@ -3,7 +3,7 @@ import { Text } from 'react-native'
 import Estilo from './estilo'
 import If from './If'
 
-export default ({ props }) => {
+export default props => {
 
     const usuario = props.usuario || {}
 

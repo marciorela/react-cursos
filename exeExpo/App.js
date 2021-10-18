@@ -2,13 +2,20 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react'
 import { View, StyleSheet, SafeAreaView } from 'react-native'
 
-import UsuarioLogado from './src/components/UsuarioLogado';
+import Mega from './src/components/mega/Mega';
 
+// import FlexboxV4 from './src/components/layout/FlexboxV4';
+// import FlexboxV3 from './src/components/layout/FlexboxV3';
+// import FlexboxV2 from './src/components/layout/FlexboxV2';
+// import FlexboxV1 from './src/components/layout/FlexboxV1';
+// import DigiteSeuNome from './src/components/DigiteSeuNome';
+// import ListaProdutosV2 from './src/components/produtos/ListaProdutosV2';
+// import ListaProdutos from './src/components/produtos/ListaProdutos';
+// import UsuarioLogado from './src/components/UsuarioLogado';
 // import Familia from './src/components/relacao/Familia';
 // import Membro from './src/components/relacao/Membro';
-
-//import ParImpar from './src/components/ParImpar';
-//import Diferenciar from './src/components/Diferenciar';
+// import ParImpar from './src/components/ParImpar';
+// import Diferenciar from './src/components/Diferenciar';
 // import ContadorV2 from './src/components/contador/ContadorV2';
 // import Pai from './src/components/direta/Pai'
 // import Pai from './src/components/indireta/Pai'
@@ -23,13 +30,22 @@ import UsuarioLogado from './src/components/UsuarioLogado';
 export default () => (
     <SafeAreaView style={style.App}>
 
+        <Mega qtdeNumeros={12} />
+
+        {/* 
+        <FlexboxV4/>
+        <FlexboxV3/>
+        <FlexboxV2/>
+        <FlexboxV1/>
+        <DigiteSeuNome/>
+        <ListaProdutosV2 />
+        <ListaProdutos />
         <UsuarioLogado usuario={ {nome: 'Gui', email: 'gui@gui.com'} } />
         <UsuarioLogado usuario={ {nome: 'Ana'} } />
         <UsuarioLogado usuario={ {email: 'carlos@empresa.com'} } />
+        <UsuarioLogado usuario={ null } />
         <UsuarioLogado usuario={ {} } />
-        {/* <UsuarioLogado usuario={null} /> */}
 
-        {/* 
         <Familia>
             <Membro nome="Bia" sobrenome="Arruda" />
             <Membro nome="Carlos" sobrenome="Arruda" />
@@ -66,7 +82,7 @@ const style = StyleSheet.create({
         flexGrow: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        padding: 20
+        padding: 20,
     }
 })
 
