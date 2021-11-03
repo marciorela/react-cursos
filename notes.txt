@@ -1,0 +1,16 @@
+- INICIAR O PROJETO
+npx react-native init mines
+
+- EXECUTAR O PROJETO
+npx react-native run-android
+
+- LOG
+npx react-native log-android
+
+
+- dependencias navegacao
+npm install @react-navigation/stack
+npm install @react-navigation/drawer
+npm install @react-navigation/bottom-tabs
+npm install react-native-screens react-native-safe-area-context
+npm install @react-navigation/native @react-navigation/native-stack
